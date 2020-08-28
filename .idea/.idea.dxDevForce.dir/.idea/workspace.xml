@@ -16,7 +16,13 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ffdd487b-d949-4aa1-b9d5-395bb90beba7" name="Default Changelist" comment="">
@@ -102,5 +108,15 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="update to servicestack" />
     <option name="LAST_COMMIT_MESSAGE" value="update to servicestack" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="658" y="327" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598657691213">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="658" y="327" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1598657691213" />
+    <state x="515" y="258" key="Vcs.Push.Dialog.v2" timestamp="1598658075599">
+      <screen x="0" y="23" width="1920" height="1057" />
+    </state>
+    <state x="515" y="258" key="Vcs.Push.Dialog.v2/0.23.1920.1057/-1920.23.1920.1057@0.23.1920.1057" timestamp="1598658075599" />
   </component>
 </project>
