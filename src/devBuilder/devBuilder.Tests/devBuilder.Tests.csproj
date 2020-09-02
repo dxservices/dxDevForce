@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ServiceStack.OrmLite" Version="5.9.2" />
     <ProjectReference Include="..\devBuilder.ServiceInterface\devBuilder.ServiceInterface.csproj" />
     <ProjectReference Include="..\devBuilder.ServiceModel\devBuilder.ServiceModel.csproj" />
 

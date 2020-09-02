@@ -42,7 +42,7 @@ namespace devBuilder
 
     public class AppHost : AppHostBase
     {
-        public AppHost() : base("devBuilder", typeof(MyServices).Assembly) { }
+        public AppHost() : base("devBuilder", typeof(FormServices).Assembly) { }
 
         // Configure your AppHost with the necessary configuration and dependencies your App needs
         public override void Configure(Container container)
@@ -50,7 +50,7 @@ namespace devBuilder
             // enable server-side rendering, see: https://sharpscript.net/docs/sharp-pages
             Plugins.Add(new SharpPagesFeature {
                 EnableSpaFallback = true
-            }); 
+            });
 
             SetConfig(new HostConfig
             {
