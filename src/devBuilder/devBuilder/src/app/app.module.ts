@@ -17,6 +17,8 @@ import { AdminComponent } from './admin';
 
 import { StoreService } from './shared/store';
 import { Routes } from './shared';
+import {AppFormModule} from "./form/form.module";
+import {FormBuilderComponent} from "./form/builder/component";
 
 @Injectable({ providedIn: 'root' })
 export class AuthGuard implements CanActivate {
@@ -55,6 +57,9 @@ export const routes: NgRoutes = [
   { path: 'profile', component: ProfileComponent, canActivate:[AuthGuard] },
   { path: 'admin', component: AdminComponent, canActivate:[AuthGuard], data: { role: 'Admin' } },
   { path: 'forbidden', component: ForbiddenComponent },
+
+  { path: 'builder', component: FormBuilderComponent, data: { message: 'About page' } },
+
   { path: '**', redirectTo: '/' },
 ];
 
@@ -74,6 +79,7 @@ export const routes: NgRoutes = [
     FormsModule,
     HttpClientModule,
     ServiceStackModule,
+    AppFormModule,
     RouterModule.forRoot(routes)
   ],
   providers: [{provide: JsonServiceClient, useValue: new JsonServiceClient('/')}],
